@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Penyewaan Mobil</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo"><img src="images/bmw.jpg"alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ride">Ride</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="header-btn">
+            <a href="verifikasi.html" class="sign-up">Sign Up</a>
+            <a href="verifikasi.html?type=signin" class="sign-in">Sign In</a>
+        </div>
+    </header>
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="text">
+    <h1><span>Mencari</span> mobil <br>untuk disewa</h1>
+            <div class="app-stores">
+                <img src="images/ios.png" alt="">
+                <img src="images/play.png" alt="">
+            </div>
+        </div>
+       <div class="form-container">
+    <form action="">
+        <div class="input-box">
+            <span>Lokasi</span>
+            <input type="search" name="" id="" placeholder="Pilih Lokasi">
+        </div>
+        <div class="input-box">
+            <span>Pengambilan</span>
+            <input type="date" name="" id="">
+        </div>
+        <div class="input-box">
+            <span>Pengembalian</span>
+            <input type="date" name="" id="">
+        </div>
+        <a href="#services" class="btn">Cari Mobil</a>
+    </form>
+</div>
+
+    </section>    
+     <!-- Ride -->
+    <section class="ride" id="ride">
+    <div class="heading">
+        <span>Cara Kerjanya</span>
+        <h1>Sewa Mobil dalam 3 Langkah Mudah</h1>
+    </div>
+    <div class="ride-container">
+        <div class="box">
+            <i class='bx bxs-map'></i>
+            <h2>Pilih Lokasi</h2>
+            <p>Pilih lokasi tempat kamu ingin mengambil mobil sewaan agar lebih mudah dan nyaman.</p>
+        </div>
+        <div class="box">
+            <i class='bx bxs-calendar-check'></i>
+            <h2>Tanggal Pengambilan</h2>
+            <p>Tentukan tanggal kapan kamu ingin mengambil mobil dan memulai perjalananmu dengan nyaman.</p>
+        </div>
+        <div class="box">
+            <i class='bx bxs-calendar-star'></i>
+            <h2>Pesan Mobilmu</h2>
+            <p>Pilih mobil yang sesuai dengan kebutuhanmu dan pesan dengan mudah hanya dalam beberapa langkah.</p>
+        </div>
+    </div>
+</section>    
+    <!-- Services -->
+    <section class="services" id="services">
+       <div class="heading">
+    <span>Layanan Terbaik</span>
+    <h1>Temukan Penawaran Terbaik <br> Dari Dealer Berkualitas</h1>
+</div>
+<div class="work__filters">
+    <span class="work__item active-work" data-filter="all">Semua</span>
+    <span class="work__item" data-filter=".cityCar">Mobil Kota</span>
+    <span class="work__item" data-filter=".suv">SUV</span>
+    <span class="work__item" data-filter=".mpv">MPV</span>
+    <span class="work__item" data-filter=".sedan">Sedan</span>
+    <span class="work__item" data-filter=".sport">Sport</span>
+    <span class="work__item" data-filter=".electric">Mobil Listrik</span>
+</div>
+
+ <div class="services-container container grid">
+
+    <!-- 🚗 CITY CAR -->
+    <div class="box mix cityCar">
+        <div class="box-img">
+            <img src="images/brio.jpg" alt="Honda Brio">
+        </div>
+        <p>2023</p>
+        <h3>Honda Brio RS</h3>
+        <h2>Rp270.000.000 | Rp4.500.000<span>/bulan</span></h2>
+        <a href="detail.html?id=brio" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix cityCar">
+        <div class="box-img">
+            <img src="images/agya.jpg" alt="Toyota Agya">
+        </div>
+        <p>2022</p>
+        <h3>Toyota Agya GR Sport</h3>
+        <h2>Rp265.000.000 | Rp4.200.000<span>/bulan</span></h2>
+        <a href="detail.html?id=agya" class="btn">Lihat Penawaran</a>
+    </div>
+
+     <div class="box mix cityCar">
+        <div class="box-img">
+            <img src="images/sirion.jpg" alt="Daihatsu Sirion">
+        </div>
+        <p>2023</p>
+        <h3>Daihatsu Sirion 1.3 AT</h3>
+        <h2>Rp235.000.000 | Rp4.500.000<span>/bulan</span></h2>
+        <a href="detail.html?id=sirion" class="btn">Lihat Penawaran</a>
+    </div>
+        <div class="box mix cityCar">
+        <div class="box-img">
+            <img src="images/swift.jpg" alt="Suzuki Swift">
+        </div>
+        <p>2022</p>
+        <h3>Suzuki Swift GX</h3>
+        <h2>Rp125.000.000 | <br>Rp2.200.000<span>/bulan</span></h2>
+        <a href="detail.html?id=swift" class="btn">Lihat Penawaran</a>
+    </div>
+    <!-- 🚙 SUV -->
+    <div class="box mix suv">
+        <div class="box-img">
+            <img src="images/fortuner.jpg" alt="Toyota Fortuner">
+        </div>
+        <p>2023</p>
+        <h3>Toyota Fortuner GR Sport</h3>
+        <h2>Rp720.000.000 | Rp11.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=fortuner" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix suv">
+        <div class="box-img">
+            <img src="images/crv.jpg" alt="Honda CR-V">
+        </div>
+        <p>2024</p>
+        <h3>Honda CR-V Turbo</h3>
+        <h2>Rp680.000.000 | Rp10.500.000<span>/bulan</span></h2>
+        <a href="detail.html?id=crv" class="btn">Lihat Penawaran</a>
+    </div>
+
+     <div class="box mix suv">
+        <div class="box-img">
+            <img src="images/hr-v.jpg" alt="Honda HR-V">
+        </div>
+        <p>2024</p>
+        <h3>Honda HR-V RS Turbo</h3>
+        <h2>Rp455.000.000 | Rp9.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=hrv" class="btn">Lihat Penawaran</a>
+    </div>
+
+         <div class="box mix suv">
+        <div class="box-img">
+            <img src="images/mazda.jpg" alt="Mazda CX-5">
+        </div>
+        <p>2024</p>
+        <h3>Mazda CX-5 Elite</h3>
+        <h2>Rp600.000.000 | Rp11.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=mazda" class="btn">Lihat Penawaran</a>
+    </div>
+    <!-- 🚐 MPV -->
+    <div class="box mix mpv">
+        <div class="box-img">
+            <img src="images/innova.jpg" alt="Toyota Innova Zenix">
+        </div>
+        <p>2023</p>
+        <h3>Toyota Innova Zenix Hybrid</h3>
+        <h2>Rp550.000.000 | Rp8.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=zenix" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix mpv">
+        <div class="box-img">
+            <img src="images/alphard.jpg" alt="Toyota Alphard">
+        </div>
+        <p>2022</p>
+        <h3>Alphard Executive Lounge</h3>
+        <h2>Rp1.600.000.000 | Rp20.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=alphard" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix mpv">
+        <div class="box-img">
+            <img src="images/Stargazer.jpg" alt="Hyundai Stargazer">
+        </div>
+        <p>2024</p>
+        <h3>Hyundai Stargazer Prime</h3>
+        <h2>Rp350.000.000 |&nbsp; Rp6.500.000<span>/bulan</span></h2>
+        <a href="detail.html?id=stargazer" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix mpv">
+        <div class="box-img">
+            <img src="images/venturer.jpg" alt="Innova Venturer">
+        </div>
+        <p>2023</p>
+        <h3>Innova Venturer Diesel 2.4 AT</h3>
+        <h2>Rp510.000.000 | <br>Rp9.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=venturer" class="btn">Lihat Penawaran</a>
+    </div>
+    <!-- 🚘 SEDAN -->
+    <div class="box mix sedan">
+        <div class="box-img">
+            <img src="images/camry.jpg" alt="Toyota Camry">
+        </div>
+        <p>2024</p>
+        <h3>Toyota Camry Hybrid</h3>
+        <h2>Rp950.000.000 | Rp13.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=camry" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix sedan">
+        <div class="box-img">
+            <img src="images/mercedes.jpg" alt="Mercedes-Benz S-Class">
+        </div>
+        <p>2023</p>
+        <h3>Mercedes-Benz S-Class</h3>
+        <h2>Rp3.000.000.000 | Rp38.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=sclass" class="btn">Lihat Penawaran</a>
+    </div>
+
+     <div class="box mix sedan">
+        <div class="box-img">
+            <img src="images/accord.jpg" alt="Honda Accord">
+        </div>
+        <p>2024</p>
+        <h3>Honda Accord RS e:HEV</h3>
+        <h2>Rp750.000.000 | Rp12.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=accord" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix sedan">
+        <div class="box-img">
+            <img src="images/avantgarde.jpg" alt="Mercedes-Benz Avantgarde">
+        </div>
+        <p>2024</p>
+        <h3>Avantgarde Line</h3>
+        <h2>Rp1.250.000.000 | Rp20.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=avantgarde" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <!-- 🏎️ SPORT -->
+    <div class="box mix sport">
+        <div class="box-img">
+            <img src="images/supra.jpg" alt="Toyota GR Supra">
+        </div>
+        <p>2023</p>
+        <h3>Toyota GR Supra</h3>
+        <h2>Rp2.000.000.000 | Rp25.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=grsupra" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix sport">
+        <div class="box-img">
+            <img src="images/porsche.jpg" alt="Porsche 911 Carrera">
+        </div>
+        <p>2022</p>
+        <h3>Porsche 911 Carrera</h3>
+        <h2>Rp3.200.000.000 | Rp40.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=porsche911" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix sport">
+        <div class="box-img">
+            <img src="images/BMW M4.jpg" alt="BMW M4">
+        </div>
+        <p>2024</p>
+        <h3>BMW M4 Competition Coupe</h3>
+        <h2>Rp3.000.000.000 | Rp50.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=bmwm4" class="btn">Lihat Penawaran</a>
+    </div>
+
+        <div class="box mix sport">
+    <div class="box-img">
+        <img src="images/nissan-z.jpg" alt="Nissan Z">
+    </div>
+    <p>2024</p>
+    <h3>Nissan Z</h3>
+    <h2>Rp1.500.000.000 | Rp25.000.000<span>/bulan</span></h2>
+    <a href="detail.html?id=nissanz" class="btn">Lihat Penawaran</a>
+</div>
+    <!-- ⚡ ELECTRIC -->
+    <div class="box mix electric">
+        <div class="box-img">
+            <img src="images/tesla.jpg" alt="Tesla Model 3">
+        </div>
+        <p>2024</p>
+        <h3>Tesla Model 3</h3>
+        <h2>Rp950.000.000 | Rp12.000.000<span>/bulan</span></h2>
+        <a href="detail.html?id=tesla3" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix electric">
+        <div class="box-img">
+            <img src="images/ioniq.jpg" alt="Hyundai Ioniq 5">
+        </div>
+        <p>2023</p>
+        <h3>Hyundai Ioniq 5</h3>
+        <h2>Rp850.000.000 | Rp10.500.000<span>/bulan</span></h2>
+        <a href="detail.html?id=ioniq5" class="btn">Lihat Penawaran</a>
+    </div>
+
+    <div class="box mix electric">
+    <div class="box-img">
+        <img src="images/bmw-i4.jpg" alt="BMW i4">
+    </div>
+    <p>2024</p>
+    <h3>BMW i4</h3>
+    <h2>Rp1.200.000.000 | Rp15.000.000<span>/bulan</span></h2>
+    <a href="detail.html?id=bmwi4" class="btn">Lihat Penawaran</a>
+</div>
+
+<div class="box mix electric">
+    <div class="box-img">
+        <img src="images/nissan-leaf.jpg" alt="Nissan Leaf">
+    </div>
+    <p>2022</p>
+    <h3>Nissan Leaf</h3>
+    <h2>Rp700.000.000 | Rp8.500.000<span>/bulan</span></h2>
+    <a href="detail.html?id=nissanleaf" class="btn">Lihat Penawaran</a>
+</div>
+
+
+</div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+  <div class="heading">
+    <span>Tentang Kami</span>
+    <h1>Pengalaman Pelanggan Terbaik</h1>
+  </div>
+
+  <div class="about-container">
+    <div class="about-img">
+      <img src="images/mobil.jpg" alt="">
+    </div>
+
+    <div class="about-text">
+      <span>Tentang Kami</span>
+      <p>Perjalanan bukan sekadar berpindah dari satu tempat ke tempat lain; ini adalah kisah yang terus berjalan. Setiap jalan yang dilalui membawa cerita baru, dan kami hadir untuk memastikan perjalanan Anda nyaman, bebas, dan penuh makna.</p>
+      <p>Dengan armada terbaik dan pelayanan yang tulus, kami tidak hanya mengantarkan Anda ke tujuan—kami juga menghadirkan ketenangan di setiap langkah perjalanan Anda.</p>
+      <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+    </div>
+  </div>
+</section>
+
+    <!-- Reviews -->
+   <section class="reviews" id="reviews">
+  <div class="heading">
+    <span>Ulasan</span>
+    <h1>Setiap Perjalanan Meninggalkan Cerita – Inilah Kata Mereka</h1>
+  </div>
+
+  <div class="reviews-container">
+    <div class="box">
+      <div class="rev-img">
+        <img src="images/rev1.jpg" alt="">
+      </div>
+      <h2>Ghina Aura 'Amalia</h2>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+      </div>
+      <p>"Sebagai seorang arsitek, saya menghargai detail dan kenyamanan. Rental ini menyediakan mobil yang terawat, pelayanan cepat, dan perjalanan yang lancar. Benar-benar dirancang dengan baik!"</p>
+    </div>
+
+    <div class="box">
+      <div class="rev-img">
+        <img src="images/rev2.jpg" alt="">
+      </div>
+      <h2>Cristiano Ronaldo</h2>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+      </div>
+      <p>"Luar biasa! Mobil cepat, nyaman, dan selalu siap digunakan. Rental ini seperti saya di lapangan—selalu di level tertinggi. Siiiuuu!"</p>
+    </div>
+
+    <div class="box">
+      <div class="rev-img">
+        <img src="images/rev3.jpg" alt="">
+      </div>
+      <h2>Lionel Messi</h2>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+      </div>
+      <p>"Perjalanan yang lancar adalah segalanya. Rental ini selalu tepat waktu, nyaman, dan bisa diandalkan. Seperti permainan saya—semuanya berjalan mulus!"</p>
+    </div>
+  </div>
+</section>
+
+   <!-- Newsletter -->
+<section class="newsletter">
+  <h2>Berlangganan Newsletter</h2>
+  <div class="box">
+    <input type="text" placeholder="Masukkan Email Anda">
+    <a href="newsletter.html" class="btn">Berlangganan</a>
+  </div>
+</section>
+
+<div class="copyright">
+  <p>&#169; 2025 Roghil Imperial Rides. Seluruh Hak Cipta Dilindungi.</p>
+</div>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/khodim_tohir?igsh=NGxqNmd4b25kdDNo"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://x.com/Ragil_Affan07?t=7hWWRpLjoeCuIaBoV7XwBA&s=08"><i class='fa-brands fa-x-twitter' ></i></a>
+        </div>
+     </div>
+    <!-- ScrollReveal -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JS -->
+     <script src="main.js"></script>
+</body>
+</html>
