@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter - Roghil Imperial Rides</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .newsletter {
+        background: white;
+        border-radius: 15px;
+        padding: 40px 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .newsletter:hover {
+        transform: translateY(-5px);
+      }
+
+      .newsletter h2 {
+        color: #2c3e50;
+        font-size: 32px;
+        margin-bottom: 15px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .newsletter h2:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(to right, #3498db, #2c3e50);
+        border-radius: 2px;
+      }
+
+      .newsletter p {
+        color: #7f8c8d;
+        font-size: 16px;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+      }
+
+      .box {
+        display: flex;
+        max-width: 500px;
+        margin: 0 auto;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .box input {
+        flex: 1;
+        padding: 15px 25px;
+        border: none;
+        background: #f8f9fa;
+        font-size: 16px;
+        outline: none;
+        transition: background 0.3s;
+      }
+
+      .box input:focus {
+        background: #e8f4fd;
+      }
+
+      .box input::placeholder {
+        color: #95a5a6;
+      }
+
+      .btn {
+        background: linear-gradient(to right, #3498db, #2c3e50);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn:hover {
+        background: linear-gradient(to right, #2980b9, #34495e);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .benefits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .benefit-item {
+        display: flex;
+        align-items: center;
+        background: #f8f9fa;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 14px;
+        color: #2c3e50;
+      }
+
+      .benefit-item i {
+        margin-right: 8px;
+        color: #3498db;
+      }
+
+      .footer {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .copyright {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .social {
+        display: flex;
+        gap: 20px;
+      }
+
+      .social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        color: white;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+
+      .social a:hover {
+        background: white;
+        color: #3498db;
+        transform: translateY(-5px);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .newsletter {
+          padding: 30px 20px;
+        }
+
+        .newsletter h2 {
+          font-size: 28px;
+        }
+
+        .box {
+          flex-direction: column;
+          border-radius: 15px;
+        }
+
+        .box input {
+          border-radius: 15px 15px 0 0;
+          padding: 15px 20px;
+        }
+
+        .btn {
+          border-radius: 0 0 15px 15px;
+          padding: 15px;
+        }
+
+        .benefits {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer {
+          padding: 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .newsletter h2 {
+          font-size: 24px;
+        }
+
+        .newsletter p {
+          font-size: 14px;
+        }
+
+        .copyright {
+          font-size: 14px;
+        }
+
+        .social a {
+          width: 45px;
+          height: 45px;
+          font-size: 18px;
+        }
+      }
+
+      /* Animasi untuk feedback */
+      .success-message {
+        background: #d4edda;
+        color: #155724;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        display: none;
+      }
+
+      .error-message {
+        background: #f8d7da;
+        color: #721c24;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="newsletter">
+        <h2>Berlangganan Newsletter</h2>
+        <p>
+          Dapatkan informasi terbaru tentang promo spesial, tips perawatan
+          mobil, dan penawaran eksklusif langsung di inbox Anda.
+        </p>
+
+        <div class="box">
+          <input
+            type="text"
+            id="email-input"
+            placeholder="Masukkan Email Anda"
+          />
+          <a href="#" class="btn" id="subscribe-btn">Berlangganan</a>
+        </div>
+
+        <div class="benefits">
+          <div class="benefit-item">
+            <i class="fas fa-gift"></i> Penawaran Eksklusif
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-tag"></i> Diskon Spesial
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-newspaper"></i> Tips & Berita Terbaru
+          </div>
+        </div>
+
+        <div id="success-message" class="success-message">
+          <i class="fas fa-check-circle"></i> Terima kasih! Anda telah berhasil
+          berlangganan newsletter kami.
+        </div>
+
+        <div id="error-message" class="error-message">
+          <i class="fas fa-exclamation-circle"></i> Harap masukkan alamat email
+          yang valid.
+        </div>
+      </section>
+
+      <div class="footer">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>
+              &#169; 2025 Roghil Imperial Rides. Seluruh Hak Cipta Dilindungi.
+            </p>
+          </div>
+
+          <div class="social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a
+              href="https://www.instagram.com/khodim_tohir?igsh=NGxqNmd4b25kdDNo"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://x.com/Ragil_Affan07?t=7hWWRpLjoeCuIaBoV7XwBA&s=08">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const emailInput = document.getElementById("email-input");
+        const subscribeBtn = document.getElementById("subscribe-btn");
+        const successMessage = document.getElementById("success-message");
+        const errorMessage = document.getElementById("error-message");
+
+        // Fungsi untuk validasi email
+        function isValidEmail(email) {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(email);
+        }
+
+        // Event listener untuk tombol berlangganan
+        subscribeBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const email = emailInput.value.trim();
+
+          // Validasi email
+          if (!email) {
+            showError("Harap masukkan alamat email.");
+            return;
+          }
+
+          if (!isValidEmail(email)) {
+            showError("Harap masukkan alamat email yang valid.");
+            return;
+          }
+
+          // Simulasi pengiriman berhasil
+          showSuccess();
+
+          // Reset form
+          emailInput.value = "";
+        });
+
+        // Fungsi untuk menampilkan pesan sukses
+        function showSuccess() {
+          successMessage.style.display = "block";
+          errorMessage.style.display = "none";
+
+          // Sembunyikan pesan sukses setelah 5 detik
+          setTimeout(() => {
+            successMessage.style.display = "none";
+          }, 5000);
+        }
+
+        // Fungsi untuk menampilkan pesan error
+        function showError(message) {
+          errorMessage.innerHTML = `<i class="fas fa-exclamation-circle"></i> ${message}`;
+          errorMessage.style.display = "block";
+          successMessage.style.display = "none";
+
+          // Sembunyikan pesan error setelah 5 detik
+          setTimeout(() => {
+            errorMessage.style.display = "none";
+          }, 5000);
+        }
+
+        // Event listener untuk input email (menghilangkan pesan error saat user mulai mengetik)
+        emailInput.addEventListener("input", function () {
+          if (errorMessage.style.display === "block") {
+            errorMessage.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
