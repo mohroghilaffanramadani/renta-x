@@ -1,30 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {});
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+// Updated main.js
+document.addEventListener("DOMContentLoaded", function () {
+  // Menu functionality
+  let menu = document.querySelector("#menu-icon");
+  let navbar = document.querySelector(".navbar");
 
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navbar.classList.toggle("active");
-};
+  if (menu && navbar) {
+    menu.onclick = () => {
+      menu.classList.toggle("bx-x");
+      navbar.classList.toggle("active");
+    };
+  }
 
-window.onscroll = () => {
-  menu.classList.remove("bx-x");
-  navbar.classList.remove("active");
-};
-
-// const sr = ScrollReveal({
-//     distance: '60px',
-//     duration: 2000,
-//     delay: 400,
-//     reset: true
-// })
-
-// sr.reveal('.text',{delay: 200, origin: 'top'})
-// sr.reveal('.form-container form',{delay: 600, origin: 'left'})
-// sr.reveal('.heading',{delay: 600, origin: 'top'})
-// sr.reveal('.ride-container .box',{delay: 600, origin: 'top'})
-// sr.reveal('.services-container .box',{delay: 600, origin: 'top'})
-// sr.reveal('.about-container .box',{delay: 600, origin: 'top'})
-// sr.reveal('.reviews-container',{delay: 600, origin: 'top'})
-// sr.reveal('.work__filters',{delay: 600, origin: 'top'})
-// sr.reveal('.about-text',{delay: 600, origin: 'top'})
+  // Scroll functionality
+  window.onscroll = () => {
+    if (menu && navbar) {
+      menu.classList.remove("bx-x");
+      navbar.classList.remove("active");
+    }
+  };
+});
