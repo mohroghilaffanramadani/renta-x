@@ -34,6 +34,16 @@ html::-webkit-scrollbar-thumb {
 section {
   padding: 50px 100px;
 }
+/* Ensure all containers are within viewport */
+.container,
+section,
+header,
+.services-container,
+.ride-container,
+.reviews-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 header {
   position: fixed;
   width: 100%;
@@ -134,6 +144,7 @@ header {
   background: #d6d6d6;
   padding: 20px;
   border-radius: 0.5rem;
+  max-width: 50vw;
 }
 .input-box {
   flex: 1 1 7rem;
@@ -150,6 +161,7 @@ header {
   background: #eeeff1;
   border-radius: 0.5rem;
   font-size: 1rem;
+  max-width: 50vw;
 }
 .form-container form .btn {
   flex: 1 1 7rem;
@@ -522,7 +534,7 @@ header {
     left: auto;
     right: auto;
     margin: 0 auto;
-    width: 90%;
-    max-width: 400px;
+    /* width: 90%; */
+    max-width: 50vw;
   }
 }
