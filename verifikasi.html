@@ -292,15 +292,8 @@
         </div>
 
         <div class="content">
-            <!-- Info box untuk Sign In -->
-            <div id="signin-info" class="info-box hidden">
-                <i class="fas fa-shield-alt"></i> Untuk keamanan akun Anda, kami mengirimkan kode verifikasi dua faktor.
-            </div>
-            
-            <!-- Info box untuk Sign Up -->
-            <div id="signup-info" class="info-box">
-                <i class="fas fa-user-plus"></i> Verifikasi diperlukan untuk memastikan email/nomor telepon Anda valid.
-            </div>
+          
+
 
 
 
@@ -358,9 +351,7 @@
             </div>
             
             <!-- Notice untuk Sign Up -->
-            <div id="signup-notice" class="signup-notice">
-                <i class="fas fa-info-circle"></i> Setelah verifikasi, Anda dapat langsung menikmati layanan kami.
-            </div>
+           
 
             <div id="success-message" class="success-message hidden">
                 <i class="fas fa-check-circle" style="font-size: 40px; margin-bottom: 10px;"></i>
@@ -522,7 +513,7 @@
                 
                 // Show verification code section
                 verificationCodeSection.classList.remove('hidden');
-                sendCodeBtn.textContent = isSignUp ? 'Kode Verifikasi Dikirim!' : 'Kode 2FA Dikirim!';
+                sendCodeBtn.textContent = isSignUp ? 'Kode Verifikasi Dikirim!' : 'kode telah terkirim';
                 sendCodeBtn.disabled = true;
                 
                 // Reset code inputs
